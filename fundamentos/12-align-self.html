@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-self</title>
+    <style>
+        body{
+            background-color: #333;
+            color: #ccc;
+            font-family: 'Segoe UI Variable Display';
+        }
+        
+        .flex-container{
+            display: flex;
+            border: 2px solid #999;
+            max-width: 350px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+
+        .align-container{
+            align-items: center 
+        }
+        
+        .item{
+            font-size: 24px;
+            background-color: #099;
+            color: #fff;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 3px;
+        }
+        
+        .center{
+            align-self: center;
+        }
+        
+        .start{
+            align-self: flex-start;
+        }
+        
+        .end{
+            align-self: flex-end;
+        }
+        
+        .stretch{
+            align-self: stretch;
+        }
+        
+        .baseline{
+            align-self: baseline;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>align-self row</h1>
+    
+    <section class="flex-container align-container">
+        <div class="item auto">111</div>
+        <div class="item">22</div>
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+    </section>
+    
+    <section class="flex-container">
+        <div class="item center">111</div>
+        <div class="item start">22</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet.</div>
+        <div class="item end">Item 4</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item center">111</div>
+        <div class="item start">222</div>
+        <div class="item end">333</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet.</div>
+    </section>
+
+    <h1>align-self column</h1>
+
+    <section class="flex-container align-container direction">
+        <div class="item auto">111</div>
+        <div class="item">22</div>
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+    </section>
+    
+    <section class="flex-container direction">
+        <div class="item center">111</div>
+        <div class="item start">22</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet.</div>
+        <div class="item end">Item 4</div>
+    </section>
+
+    <section class="flex-container direction">
+        <div class="item center">111</div>
+        <div class="item start">222</div>
+        <div class="item end">333</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet.</div>
+    </section>
+    
+</body>
+</html>

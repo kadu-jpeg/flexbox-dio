@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex</title>
+    <style>
+        body{
+            background-color: #333;
+            color: #ccc;
+            font-family: 'Segoe UI Variable Display';
+        }
+        
+        .flex-container{
+            display: flex;
+            border: 2px solid #999;
+            max-width: 400px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+        
+        .item{
+            font-size: 24px;
+            background-color: #0cc;
+            color: #333;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 3px;
+        }
+        
+        .width{
+            width: 200px;
+            /* min-width: 250px; */
+        }
+        
+        .f-1{
+            flex: 1;
+            /* grow = 1; shrink = 1; basis = 0 */
+        }
+        
+        .f-2{
+            flex: 2;
+            /* grow = 2; shrink = 1; basis = 0 */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Flex</h1>
+    
+    <h4>flex: 1</h4>
+    <div class="flex-container">
+        <div class="item f-1">1</div>
+        <div class="item f-1">222</div>
+        <div class="item f-1">33</div>
+        <div class="item f-1">4</div>
+        <div class="item f-1">55</div>
+    </div>
+    
+    <h4>flex: mix</h4>
+    <div class="flex-container">
+        <div class="item f-1">1</div>
+        <div class="item f-2">222</div>
+        <div class="item f-2">33</div>
+        <div class="item f-1">4</div>
+        <div class="item f-1">55</div>
+    </div>
+    
+    <h4>width ignorado -> basis: 0</h4>
+    <div class="flex-container">
+        <div class="item f-1 width">1</div>
+        <div class="item f-1 width">222</div>
+        <div class="item f-1 width">33</div>
+        <div class="item f-1 width">4</div>
+        <div class="item f-1 width">55</div>
+    </div>
+</body>
+</html>

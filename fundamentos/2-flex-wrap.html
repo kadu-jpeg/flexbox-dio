@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Wrap</title>
+    <style>  
+        body{
+            font-family: 'Segoe UI Variable Display';
+        }
+        
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid #333;
+            border-radius: 3px;
+            max-width: 300px;
+        }
+        
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+        
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        
+        .wrap{
+            flex-wrap: wrap;
+        }
+        
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+        
+        .blue{
+            background-color: #2d98da;
+        }
+        
+        .green{
+            background-color: #20bf6b;
+        }
+        
+        .red{
+            background-color: #eb3b5a;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>No wrap</h1>
+    
+    <div class="flex-container nowrap">
+        <ul class="item red">1</ul>
+        <ul class="item green">2</ul>
+        <ul class="item blue">3</ul>
+        <ul class="item red">4</ul>
+    </div>
+    
+    <h1>Wrap</h1>
+    
+    <div class="flex-container wrap">
+        <ul class="item red">1</ul>
+        <ul class="item green">2</ul>
+        <ul class="item blue">3</ul>
+        <ul class="item red">4</ul>
+    </div>
+    
+    <h1>Wrap-reverse</h1>
+    
+    <div class="flex-container wrap-reverse">
+        <ul class="item red">1</ul>
+        <ul class="item green">2</ul>
+        <ul class="item blue">3</ul>
+        <ul class="item blue">4</ul>
+    </div>
+    
+</body>
+</html>

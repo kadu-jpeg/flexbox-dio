@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-content</title>
+    <style>
+        body{
+            font-family: 'Segoe UI Variable Display';
+            background: #333;
+            color: #ccc;
+        }
+        
+        .container{
+            height: 450px;
+            max-width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 3px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .item{
+            background-color: #09f;
+            color: #fff;
+            padding: 0 5px;
+            text-align: center;
+            border-radius: 3px;
+            flex: 1;
+            margin: 5px;
+            border: 2px solid #fff;
+        }
+        
+        .stretch{
+            align-content: stretch;
+        }
+        
+        .center{
+            align-content: center;
+        }
+        
+        .flex-start{
+            align-content: flex-start;
+        }
+        
+        .flex-end{
+            align-content: flex-end;
+        }
+        
+        .space-between{
+            align-content: space-between;
+        }
+        
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Align Content</h1>
+    
+    <h4>Stretch</h4>
+    <section class="container stretch">
+        <div class="item">Sed vel nisl quis orci dapibus elementum id at nisl.</div>
+        <div class="item">Donec vel sodales sem.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Duis scelerisque sed nisl a pharetra.</div>
+        <div class="item">Vestibulum pellentesque sem facilisis est tristique molestie.</div>
+        <div class="item">Nulla eu urna ornare, pharetra mauris id, dapibus arcu. Nulla mi augue, congue at felis id, cursus consequat sapien.</div>
+        <div class="item">Aliquam ac magna nisl.</div>
+    </section>
+    
+    <h4>Center</h4>
+    <section class="container center">
+        <div class="item">Sed vel nisl quis orci dapibus elementum id at nisl.</div>
+        <div class="item">Donec vel sodales sem.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Duis scelerisque sed nisl a pharetra.</div>
+        <div class="item">Vestibulum pellentesque sem facilisis est tristique molestie.</div>
+        <div class="item">Nulla eu urna ornare, pharetra mauris id, dapibus arcu.</div>
+        <div class="item">Aliquam ac magna nisl.</div>
+    </section>
+    
+    <h4>Flex-start</h4>
+    <section class="container flex-start">
+        <div class="item">Sed vel nisl quis orci dapibus elementum id at nisl.</div>
+        <div class="item">Donec vel sodales sem.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Duis scelerisque sed nisl a pharetra.</div>
+        <div class="item">Vestibulum pellentesque sem facilisis est tristique molestie.</div>
+        <div class="item">Nulla eu urna ornare, pharetra mauris id, dapibus arcu.</div>
+        <div class="item">Aliquam ac magna nisl.</div>
+    </section>
+    
+    <h4>Flex-end</h4>
+    <section class="container flex-end">
+        <div class="item">Sed vel nisl quis orci dapibus elementum id at nisl.</div>
+        <div class="item">Donec vel sodales sem.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Duis scelerisque sed nisl a pharetra.</div>
+        <div class="item">Vestibulum pellentesque sem facilisis est tristique molestie.</div>
+        <div class="item">Nulla mi augue, congue at felis id, cursus consequat sapien.</div>
+        <div class="item">Aliquam ac magna nisl.</div>
+    </section>
+    
+    <h4>Space-between</h4>
+    <section class="container space-between">
+        <div class="item">Sed vel nisl quis orci dapibus elementum id at nisl.</div>
+        <div class="item">Donec vel sodales sem.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Duis scelerisque sed nisl a pharetra.</div>
+        <div class="item">Vestibulum pellentesque sem facilisis est tristique molestie.</div>
+        <div class="item">Nulla eu urna ornare, pharetra mauris id, dapibus arcu. </div>
+        <div class="item">Aliquam ac magna nisl.</div>
+    </section>
+    
+    <h4>Space-around</h4>
+    <section class="container space-around">
+        <div class="item">Sed vel nisl quis orci dapibus elementum id at nisl.</div>
+        <div class="item">Donec vel sodales sem.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Duis scelerisque sed nisl a pharetra.</div>
+        <div class="item">Vestibulum pellentesque sem facilisis est tristique molestie.</div>
+        <div class="item">Nulla eu urna ornare, pharetra mauris id, dapibus arcu.</div>
+        <div class="item">Aliquam ac magna nisl.</div>
+    </section>
+    
+</body>
+</html>

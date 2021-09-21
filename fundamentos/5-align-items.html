@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-items</title>
+    <style>
+        body{
+            font-family: 'Segoe UI Variable Display';
+        }
+        
+        .container{
+            max-width: 350px;
+            border: 1px solid #333;
+            display: flex;
+            border-radius: 3px;
+        }
+        
+        .item{
+            background-color: #099;
+            color: #fff;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 3px;
+            flex: 1;
+        }
+        
+        .column{
+            flex-direction: column;
+        }
+        
+        .flex{
+            flex: 1;
+        }
+        
+        .center{
+            align-items: center;
+        }
+        
+        .stretch{
+            align-items: stretch;
+        }
+        
+        .flex-start{
+            align-items: flex-start;
+        }
+        
+        .flex-end{
+            align-items: flex-end;
+        }
+        
+        .baseline{
+            align-items: baseline;
+        }
+
+        .middle{
+            height: 500px;
+            justify-content: center;
+        }
+
+        .middle .item {
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align items (Row)</h1>
+    
+    <h4>Center</h4>
+    
+    <section class="container center flex">
+        <div class="item">Adipiscing elit. </div>
+        <div class="item">A diam maecenas sed enim ut sem. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <!--<div class="item">Consectetur libero id faucibus nisl tincidunt eget nullam.</div>-->
+    </section>
+    
+    <h4>Stretch</h4>
+    
+    <section class="container stretch flex">
+        <div class="item">Adipiscing elit. </div>
+        <div class="item">A diam maecenas sed enim ut sem. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <!--<div class="item">Consectetur libero id faucibus nisl tincidunt eget nullam.</div>-->
+    </section>
+    
+    <h4>Flex-start</h4>
+    
+    <section class="container flex-start flex">
+        <div class="item">Adipiscing elit. </div>
+        <div class="item">A diam maecenas sed enim ut sem. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <!--<div class="item">Consectetur libero id faucibus nisl tincidunt eget nullam.</div>-->
+    </section>
+    
+    <h4>Flex-end</h4>
+    
+    <section class="container flex-end flex">
+        <div class="item">Adipiscing elit. </div>
+        <div class="item">A diam maecenas sed enim ut sem. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <!--<div class="item">Consectetur libero id faucibus nisl tincidunt eget nullam.</div>-->
+    </section>
+    
+    <h4>Baseline</h4>
+    
+    <section class="container baseline flex">
+        <div class="item"><br/>Adipiscing elit. </div>
+        <div class="item">A diam maecenas sed enim ut sem. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <!--<div class="item">Consectetur libero id faucibus nisl tincidunt eget nullam.</div>-->
+    </section>
+    
+    <h1>Align items (Column)</h1>
+    
+    <h4>Center</h4>
+    
+    <section class="container center column">
+        <div class="item">Adipiscing elit. </div>
+        <div class="item">A diam maecenas sed enim ut sem. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <!--<div class="item">Consectetur libero id faucibus nisl tincidunt eget nullam.</div>-->
+    </section>
+    
+    <h4>Stretch</h4>
+    
+    <section class="container stretch column">
+        <div class="item">Adipiscing elit. </div>
+        <div class="item">A diam maecenas sed enim ut sem. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <!--<div class="item">Consectetur libero id faucibus nisl tincidunt eget nullam.</div>-->
+    </section>
+    
+    <h4>Flex-start</h4>
+    
+    <section class="container flex-start column">
+        <div class="item">Adipiscing elit. </div>
+        <div class="item">A diam maecenas sed enim ut sem. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <!--<div class="item">Consectetur libero id faucibus nisl tincidunt eget nullam.</div>-->
+    </section>
+    
+    <h4>Flex-end</h4>
+    
+    <section class="container flex-end column">
+        <div class="item">Adipiscing elit. </div>
+        <div class="item">A diam maecenas sed enim ut sem. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <!--<div class="item">Consectetur libero id faucibus nisl tincidunt eget nullam.</div>-->
+    </section>
+    
+    <h4>Baseline</h4>
+    
+    <section class="container baseline column">
+        <div class="item"><br/>Adipiscing elit. </div>
+        <div class="item">A diam maecenas sed enim ut sem. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <!--<div class="item">Consectetur libero id faucibus nisl tincidunt eget nullam.</div>-->
+    </section>
+
+    <h4>Alinhamento total ao centro do container</h4>
+
+    <section class="container middle center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel neque ut urna placerat aliquet. Nunc vel ipsum vel mi mattis hendrerit. </div>
+    </section>
+</body>
+</html>
